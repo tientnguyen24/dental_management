@@ -1,0 +1,11 @@
+D:\TienNguyen\Application\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.exe.config
+D:\TienNguyen\Application\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.exe
+D:\TienNguyen\Application\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.pdb
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.AssemblyReference.cache
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.Properties.Resources.resources
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.GenerateResource.cache
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.CoreCompileInputs.cache
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.exe
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.pdb
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.fLogin.resources
+D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.fStaff.resources
