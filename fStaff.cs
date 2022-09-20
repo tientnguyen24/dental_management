@@ -44,12 +44,7 @@ namespace QuanLyNhaKhoa
             //dtgvContent.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] {"M001"});
         }
 
-        void LoadInvoiceList()
-        {
-            string query = "SELECT dbo.Customer.name AS [Họ và tên], dbo.Product.name AS [Tên dịch vụ],  dbo.Invoice.invoiceDate AS [Ngày lập hoá đơn], dbo.Invoice.invoiceNo AS [Số hoá đơn], dbo.InvoiceDetail.quantity AS [Số lượng], dbo.Product.price AS [Đơn giá], dbo.InvoiceDetail.amount AS [Thành tiền] FROM dbo.Customer JOIN dbo.Invoice ON dbo.Customer.id = dbo.Invoice.customerId JOIN dbo.InvoiceDetail ON dbo.Invoice.id = dbo.InvoiceDetail.invoiceId JOIN dbo.Product ON dbo.Product.id = dbo.InvoiceDetail.productId";
-
-            dtgvContent.DataSource = DataProvider.Instance.ExecuteQuery(query);
-        }
+        
         private void btnCustomerSupport_Click(object sender, EventArgs e)
         {
             LoadCustomerList();
@@ -57,7 +52,8 @@ namespace QuanLyNhaKhoa
 
         private void btnStatistical_Click(object sender, EventArgs e)
         {
-            LoadInvoiceList();
+            string query = "SELECT dbo.Customer.name AS [Họ và tên], dbo.Product.name AS [Tên dịch vụ],  dbo.Invoice.invoiceDate AS [Ngày lập hoá đơn], dbo.Invoice.invoiceNo AS [Số hoá đơn], dbo.InvoiceDetail.quantity AS [Số lượng], dbo.Product.price AS [Đơn giá], dbo.InvoiceDetail.amount AS [Thành tiền] FROM dbo.Customer JOIN dbo.Invoice ON dbo.Customer.id = dbo.Invoice.customerId JOIN dbo.InvoiceDetail ON dbo.Invoice.id = dbo.InvoiceDetail.invoiceId JOIN dbo.Product ON dbo.Product.id = dbo.InvoiceDetail.productId";
+            dtgvContent.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

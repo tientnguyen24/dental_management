@@ -32,33 +32,6 @@ namespace QuanLyNhaKhoa.DAO
         // chuỗi xác định kết nối tới database
         private string connectionStr = "Data Source=DICTIENTNGUYEN;Initial Catalog=DB_DentalManagement;Integrated Security=True";
 
-        // query trả về dữ liệu khi thực thi câu query
-        public DataTable ExecuteQuery(string query)
-        {
-            // hiển thị dữ liệu qua data table
-            DataTable data = new DataTable();
-
-            // kết thúc khối lệnh sẽ tự được giải phóng qua using()
-            using (SqlConnection connection = new SqlConnection(connectionStr))
-            {
-                // kết nối connection
-                connection.Open();
-
-                // thực thi câu query với database
-                SqlCommand command = new SqlCommand(query, connection);
-
-                //trung gian thực thi câu truy vấn ở command
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-                // fill dữ liệu vào từ câu truy vấn tới biến data
-                adapter.Fill(data);
-
-                // đóng kết nối database
-                connection.Close();
-            }
-            return data;
-        }
-
         // query trả về dữ liệu khi thực thi câu query với tham số truyền vào, mặc định null
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
@@ -100,7 +73,7 @@ namespace QuanLyNhaKhoa.DAO
             return data;
         }
 
-        // non query trả về số dòng record
+        // non query trả về số dòng record được thực thi với tham số truyền vào
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             // biến đếm số lượng record khi chạy câu query
@@ -138,7 +111,7 @@ namespace QuanLyNhaKhoa.DAO
             return data;
         }
 
-        // scalar trả về total của column
+        // scalar trả về ô đầu tiên của cột và dòng
         public object ExecuteScalar(string query, object[] parameter = null)
         {
             // biến đếm số lượng record khi chạy câu query

@@ -9,3 +9,14 @@ D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.exe
 D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.pdb
 D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.fLogin.resources
 D:\TienNguyen\Application\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.fStaff.resources
+C:\Users\tientnguyen\Documents\GitHub\dental_management\bin\Debug\QuanLyNhaKhoa.exe.config
+C:\Users\tientnguyen\Documents\GitHub\dental_management\bin\Debug\QuanLyNhaKhoa.exe
+C:\Users\tientnguyen\Documents\GitHub\dental_management\bin\Debug\QuanLyNhaKhoa.pdb
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.csproj.AssemblyReference.cache
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.fLogin.resources
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.fStaff.resources
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.Properties.Resources.resources
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.csproj.GenerateResource.cache
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.csproj.CoreCompileInputs.cache
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.exe
+C:\Users\tientnguyen\Documents\GitHub\dental_management\obj\Debug\QuanLyNhaKhoa.pdb
