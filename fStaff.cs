@@ -1,4 +1,5 @@
 ﻿using QuanLyNhaKhoa.DAO;
+using QuanLyNhaKhoa.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,7 @@ namespace QuanLyNhaKhoa
         {
             this.Close();
         }
+<<<<<<< Updated upstream
 
         void LoadCustomerList()
         {
@@ -50,14 +52,52 @@ namespace QuanLyNhaKhoa
 
             dtgvContent.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
+=======
+        
+>>>>>>> Stashed changes
         private void btnCustomerSupport_Click(object sender, EventArgs e)
         {
-            LoadCustomerList();
+            List<Customer> customerList = CustomerDAO.Instance.LoadCustomerList();
+            dtgvContent.Columns.Add("name", "Họ và tên");
+            dtgvContent.Columns.Add("gender", "Giới tính");
+            dtgvContent.Columns.Add("dayOfBirth", "Ngày sinh");
+            dtgvContent.Columns.Add("telephone", "Số điện thoại");
+            dtgvContent.Columns.Add("email", "Địa chỉ Email");
+            dtgvContent.Columns.Add("identifyCard", "CMND/CCCD");
+            foreach (Customer item in customerList)
+            {
+                string gender = "";
+                if (item.Gender == 1)
+                {
+                    gender = "Nam";
+                }
+                else
+                {
+                    gender = "Nữ";
+                }
+
+                dtgvContent.Rows.Add(item.Name, gender, item.DayOfBirth, item.Telephone, item.Email, item.IdentifyCard);
+
+            }
+            //btnCustomerSupport.Enabled = false;
         }
 
         private void btnStatistical_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             LoadInvoiceList();
+=======
+            string query = "SELECT " +
+                "dbo.Customer.name AS [Họ và tên], " +
+                "dbo.Product.name AS [Tên dịch vụ],  " +
+                "dbo.Invoice.invoiceDate AS [Ngày lập hoá đơn], " +
+                "dbo.Invoice.invoiceNo AS [Số hoá đơn], " +
+                "dbo.InvoiceDetail.quantity AS [Số lượng], " +
+                "dbo.Product.price AS [Đơn giá], " +
+                "dbo.InvoiceDetail.amount AS [Thành tiền] " +
+                "FROM dbo.Customer JOIN dbo.Invoice ON dbo.Customer.id = dbo.Invoice.customerId JOIN dbo.InvoiceDetail ON dbo.Invoice.id = dbo.InvoiceDetail.invoiceId JOIN dbo.Product ON dbo.Product.id = dbo.InvoiceDetail.productId";
+            dtgvContent.DataSource = DataProvider.Instance.ExecuteQuery(query);
+>>>>>>> Stashed changes
         }
     }
 }
